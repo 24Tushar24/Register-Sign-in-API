@@ -11,7 +11,9 @@ const newUserSchema = mongoose.Schema({
     password: { type: String, required: true },
     dob: { type: String, required: true },
     hobbies: { type: [String], required: true },
-    gender: { type: String, required: true }
+    gender: { type: String, required: true },
+    resetPasswordToken: { type: String },
+    resetPasswordExpires: { type: Date },
 
 }, { timestamps: true });
 
